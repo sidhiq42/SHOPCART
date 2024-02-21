@@ -1,0 +1,32 @@
+
+<div class="container">
+    <div class="row mt-2">
+     <a  class="btn btn-success mt-3 mb-3 ml-auto " style="color: #fff;">ADD PRODUCT</a>
+    </div>
+</div>
+
+<table class="table">
+    <div class="conatiner">
+  <thead>
+    <tr>
+      <th scope="col">Product Name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Prize</th>
+      <th scope="col">Image</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+     {{#each products}}
+    <tr>
+      <td>{{this.productname}}</td>
+      <td>{{this.category}}</td>
+      <td>{{this.prize}}</td>
+      <td><img src="{{this.image}}" style="height: 50px; width:50px" alt=""></td>
+      <td>{{this.description}}</td>
+     
+    </tr>
+     {{/each}}
+  </tbody>
+  </div>
+</table>
