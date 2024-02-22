@@ -1,0 +1,33 @@
+<div class="container py-5">
+    <h2 class="text-center mb-4">Product Details</h2>
+    <form class="row " method="POST" enctype="multipart/form-data">
+      <div class="col-md-3" >
+        <label for="productName" class="form-label">Product Name</label>
+        <input type="text" class="form-control" id="productName" name="productname" placeholder="Enter product name" required>
+        <div class="invalid-feedback">Please enter a product name.</div>
+      </div>
+      <div class="col-md-3">
+        <label for="quantity" class="form-label">Quantity</label>
+        <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Enter quantity" required>
+        <div class="invalid-feedback">Please enter a quantity.</div>
+      </div>
+      <div class="col-md-3">
+        <label for="price" class="form-label">Price</label>
+        <input type="number" class="form-control" id="price" name="price" placeholder="Enter price" required>
+        <div class="invalid-feedback">Please enter a price.</div>
+      </div>
+      <div class="col-md-3 ">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" rows="3" name="description" placeholder="Enter product description" required></textarea>
+        <div class="invalid-feedback">Please enter a description.</div>
+      </div>
+      <div class="col-md-3">
+        <label for="productPhoto" class="form-label">Product Photo</label>
+        <input type="file" class="form-control" id="productPhoto" name="image">
+        <div class="invalid-feedback">Please upload a product photo.</div>
+      </div>
+      <div class="mt-4">
+        <button class="btn btn-primary mt-3" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
